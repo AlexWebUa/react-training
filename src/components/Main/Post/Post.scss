@@ -1,0 +1,31 @@
+.post {
+    max-width: 650px;
+    margin: 0 auto;
+
+    & + .post {
+        margin-top: 20px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__img {
+        margin: 15px auto;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        &-author {
+            font-weight: bold;
+        }
+    }
+    
+    &__description {
+        text-align: justify;
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import Post from "./Post";
-import Sidebar from "./Sidebar";
+import Post from "./Post/Post";
+import Sidebar from "./Sidebar/Sidebar";
 import "./Main.scss";
 
 const Main = () => {
@@ -8,6 +8,8 @@ const Main = () => {
         <main className="main">
             <div className="content">
                 <div className="container">
+                    <Post/>
+                    <Post/>
                     <Post/>
                 </div>
             </div>
