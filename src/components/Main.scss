@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    flex-direction: row;
+
+    .content {
+        width: 75%;
+        background-color: #fff1f1;
+        padding: 50px 0;
+    }
+}

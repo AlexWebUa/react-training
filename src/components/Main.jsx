@@ -1,6 +1,7 @@
 import React from "react";
 import Post from "./Post";
 import Sidebar from "./Sidebar";
+import "./Main.scss";
 
 const Main = () => {
     return (
