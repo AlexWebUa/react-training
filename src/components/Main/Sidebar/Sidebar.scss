@@ -23,6 +23,12 @@
                 &:hover {
                     text-decoration: underline;
                 }
+
+                &.active {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: default;
+                }
             }
         }
     }

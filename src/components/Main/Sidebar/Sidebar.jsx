@@ -1,27 +1,22 @@
 import React from "react";
 import "./Sidebar.scss";
+import {NavLink} from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <ul className="menu">
                 <li className="menu__item item-1">
-                    <a href="#">Item 1</a>
+                    <NavLink to="/posts">Posts</NavLink>
                 </li>
                 <li className="menu__item item-2">
-                    <a href="#">Item 2</a>
+                    <NavLink to="/profile">Profile</NavLink>
                 </li>
                 <li className="menu__item item-3">
-                    <a href="#">Item 3</a>
+                    <NavLink to="/dialogs">Dialogs</NavLink>
                 </li>
                 <li className="menu__item item-4">
-                    <a href="#">Item 4</a>
-                </li>
-                <li className="menu__item item-5">
-                    <a href="#">Item 5</a>
-                </li>
-                <li className="menu__item item-6">
-                    <a href="#">Item 6</a>
+                    <NavLink to="/settings">Settings</NavLink>
                 </li>
             </ul>
         </div>
