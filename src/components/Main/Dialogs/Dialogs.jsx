@@ -15,7 +15,7 @@ const Dialog = (props) => {
 const Message = (props) => {
     return (
         <div className="message">
-            { props.text }
+            {props.text}
         </div>
     );
 }
@@ -39,10 +39,16 @@ const Dialogs = () => {
     return (
         <div className="dialogs">
             <div className="dialogs__list">
-
+                <Dialog name={dialogsData[0].name} id={dialogsData[0].id}/>
+                <Dialog name={dialogsData[1].name} id={dialogsData[1].id}/>
+                <Dialog name={dialogsData[2].name} id={dialogsData[2].id}/>
+                <Dialog name={dialogsData[3].name} id={dialogsData[3].id}/>
+                <Dialog name={dialogsData[4].name} id={dialogsData[4].id}/>
             </div>
             <div className="dialogs__messages">
-
+                <Message text={messagesData[0].text} id={messagesData[0].id} />
+                <Message text={messagesData[1].text} id={messagesData[1].id} />
+                <Message text={messagesData[2].text} id={messagesData[2].id} />
             </div>
         </div>
     );
